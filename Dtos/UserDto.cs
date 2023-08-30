@@ -12,7 +12,7 @@ namespace DotnetLicenseGenerator.Dtos
         public string Email { get; set; }
         public string Company { get; set; }
         public bool TwoFactorEnabled { get; set; }
-        public List<string> Roles { get; set; }
+        public string Role { get; set; }
         public DateTime? LastLoginAt { get; set; }
         public DateTime? LastSeenAt { get; set; }
         public List<MetadataDto> Metadata { get; set; }
