@@ -29,7 +29,7 @@ namespace DotnetLicenseGenerator.Controllers
                     firstName = paypalDto.FirstName,
                     lastName = paypalDto.LastName,
                     email = paypalDto.Email,
-                    roles = new string[] { "user" },
+                    role = "user",
                     password = new Guid().ToString()
                 };
                 var userDto = await licenseService.CreateUser(JsonConvert.SerializeObject(user));
